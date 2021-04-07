@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppearanceEntity" representedClassName="AppearanceEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="eyeColor" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="hairColor" optional="YES" attributeType="String"/>
+        <attribute name="height" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="race" optional="YES" attributeType="String"/>
+        <attribute name="weight" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+    </entity>
+    <entity name="BiographyEntity" representedClassName="BiographyEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="aliases" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="alignment" optional="YES" attributeType="String"/>
+        <attribute name="alterEgos" optional="YES" attributeType="String"/>
+        <attribute name="firstAppearance" optional="YES" attributeType="String"/>
+        <attribute name="fullName" optional="YES" attributeType="String"/>
+        <attribute name="placeOfBirth" optional="YES" attributeType="String"/>
+        <attribute name="publisher" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CharacterEntity" representedClassName="CharacterEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="appearance" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AppearanceEntity"/>
+        <relationship name="biography" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BiographyEntity"/>
+        <relationship name="connections" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ConnectionsEntity"/>
+        <relationship name="image" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ImageEntity"/>
+        <relationship name="powerStats" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PowerStatsEntity"/>
+        <relationship name="work" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WorkEntity"/>
+    </entity>
+    <entity name="ConnectionsEntity" representedClassName="ConnectionsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="groupAffiliation" optional="YES" attributeType="String"/>
+        <attribute name="relatives" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ImageEntity" representedClassName="ImageEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="url" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="PowerStatsEntity" representedClassName="PowerStatsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="combat" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="durability" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="intelligence" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="power" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="strength" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="WorkEntity" representedClassName="WorkEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="base" optional="YES" attributeType="String"/>
+        <attribute name="occupation" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="AppearanceEntity" positionX="-13915.55859375" positionY="-7175.83203125" width="128" height="133"/>
+        <element name="BiographyEntity" positionX="-13409.47265625" positionY="-7039.55859375" width="128" height="148"/>
+        <element name="CharacterEntity" positionX="-14159.375" positionY="-6935.56640625" width="128" height="163"/>
+        <element name="ConnectionsEntity" positionX="-13383.53125" positionY="-6800.12109375" width="128" height="73"/>
+        <element name="ImageEntity" positionX="-13465.05859375" positionY="-6688.6796875" width="128" height="58"/>
+        <element name="PowerStatsEntity" positionX="-13672.59375" positionY="-6608.48046875" width="128" height="119"/>
+        <element name="WorkEntity" positionX="-13954.328125" positionY="-6485.59765625" width="128" height="73"/>
+    </elements>
+</model>

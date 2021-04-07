@@ -1,0 +1,11 @@
+/* 
+  Localized.strings
+  SuperHeroWars
+
+  Created by Sergi Exposito on 2/3/21.
+  
+*/
+
+"text_hello" = "Hola";
+
+"text_Biography" = "Biografia";

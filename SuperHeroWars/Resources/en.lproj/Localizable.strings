@@ -1,0 +1,59 @@
+/* 
+  Localized.strings
+  SuperHeroWars
+
+  Created by Sergi Exposito on 2/3/21.
+  
+*/
+
+"text_hello" = "Hello";
+
+"text_PS_INT" = "Intelligence";
+"text_PS_STR" = "Strength";
+"text_PS_SPE" = "Speed";
+"text_PS_DUR" = "Duration";
+"text_PS_POW" = "Power";
+"text_PS_COM" = "Combat";
+
+"text_short_PS_INT" = "INT";
+"text_short_PS_STR" = "STR";
+"text_short_PS_SPE" = "SPE";
+"text_short_PS_DUR" = "DUR";
+"text_short_PS_POW" = "POW";
+"text_short_PS_COM" = "COM";
+
+"text_Biography" = "Biography";
+"text_Place_of_Birth" = "Place of Birth";
+"text_First_Appearance" = "First Appearance";
+"text_Base" = "Base";
+"text_Ocupation" = "Ocupation";
+"text_Group_Affiliation" = "Group Affilitation";
+
+"message_1_title" = "Missing fighters";
+"message_1_desc" = "Can't start the battle";
+
+"message_2_1_desc" = "Marvel team is already full";
+"message_2_2_desc" = "DC Comics team is already full";
+
+"message_3_title" = "Result";
+"message_3_desc" = " is the winner";
+
+"message_4_desc" = "No character chosen";
+
+"message_5_title" = "Alignment";
+"message_5_desc" = "Choose your path";
+
+"message_6_desc" = "Character has already been chosen";
+
+"text_filter_1" = "All";
+"text_filter_2" = "Good";
+"text_filter_3" = "Neutral";
+"text_filter_4" = "Bad";
+
+"text_result_1" = "Marvel";
+"text_result_2" = "DC Comics";
+"text_result_3" = "Empate";
+
+"text_image_good" = "Good";
+"text_image_neutral" = "Neutral";
+"text_image_bad" = "Bad";
